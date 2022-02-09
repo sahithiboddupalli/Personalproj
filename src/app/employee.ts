@@ -1,6 +1,6 @@
-export interface Employee{
-    id:number;
-    name: string;
-    empcode: string;
-    phone: number;
+export class Employee{
+    id!:number;
+    name!: string;
+    empcode!: string;
+    phone!: string;
 }

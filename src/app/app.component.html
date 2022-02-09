@@ -26,3 +26,18 @@
       </tr>
     </tbody>
   </table>
+<br>
+<br>
+<div class="modal-body">
+  <div class = "form-group">
+  <form #addForm="ngForm" (ngSubmit)="addEmployee(addForm.value)">
+    <label for="name">Employee Name</label><br>
+    <input type="text" [(ngModel)]="emp.name" name="name" #name = "ngModel">
+    <br><br>
+    <label for="phone">Employee Phone</label><br>
+    <input type="text" [(ngModel)]="emp.phone" name="phone" #phone = "ngModel">
+    <br><br>
+    <button>Add Employee</button>
+  </form>
+</div>
+</div>
